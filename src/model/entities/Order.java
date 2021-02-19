@@ -81,7 +81,7 @@ public class Order {
 		sb.append("\nOrder Status: "+getStatus());
 		sb.append("\nClient: "+getClient().getName()+" ("+sdf1.format(getClient().getBirthDate())+")");
 		sb.append(" - "+getClient().getEmail());
-		sb.append("\nOrder Items: ");
+		sb.append("\nOrder Items: \n");
 		for(OrderItem item: items) {
 			sb.append(item+"\n");
 			
