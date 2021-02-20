@@ -86,7 +86,7 @@ public class Order {
 			sb.append(item+"\n");
 			
 		}
-		sb.append("\nTotal price: R$  "+total());
+		sb.append("Total price: R$  "+total());
 		//sb.append(total());
 		
 		return sb.toString(); 

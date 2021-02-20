@@ -18,6 +18,7 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
 		Date date;
 
 		System.out.println("Enter cliente data:");
@@ -33,7 +34,6 @@ public class Main {
 		String status = input.nextLine();
 
 		Order order = new Order(date = new Date(), OrderStatus.valueOf(status), new Client(name, email, dateBirth));
-		// System.out.println(order.toString());
 
 		System.out.print("How many items to this order? ");
 		int numOfItems = input.nextInt();
